@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 require("dotenv").config();
 
-const MONGO_URI = `mongodb+srv://${process.env.MG_USERNAME}:${process.env.MG_PASSWORD}@satana.uafa6.mongodb.net/drone-app?retryWrites=true&w=majority`;
+const MONGO_URI = `mongodb+srv://${process.env.MG_USERNAME}:${process.env.MG_PASSWORD}@satana.uafa6.mongodb.net/movies-app?retryWrites=true&w=majority`;
 
 mongoose
   .connect(MONGO_URI, {
